@@ -1,1 +1,55 @@
-<iframe src="https://zeustv273.live/ch.html?id=b3" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tam Ekran Oynatıcı</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+.player-container {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100dvh;
+    overflow: hidden;
+    background: #000;
+}
+
+.player-frame {
+    position: absolute;
+    top: -50dvh;
+    left: 0;
+    width: 100%;
+    height: 200dvh;
+    border: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="player-container">
+    <iframe
+        class="player-frame"
+        src="IFRAME_URL"
+        allow="autoplay; fullscreen; encrypted-media"
+        allowfullscreen>
+    </iframe>
+</div>
+
+</body>
+</html>
